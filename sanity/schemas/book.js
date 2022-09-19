@@ -122,6 +122,18 @@ export default {
       description: `This can be a single or multiple amount fo category's`,
     },
     {
+      title: 'Book type',
+      name: 'bookType',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Hardback', value: 'hardBack' },
+          { title: 'Paperback', value: 'paperBack' },
+        ], // <-- predefined values
+        layout: 'radio', // <-- defaults to 'dropdown'
+      },
+    },
+    {
       title: 'Slug',
       name: 'slug',
       type: 'slug',

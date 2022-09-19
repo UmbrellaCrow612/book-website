@@ -24,7 +24,7 @@ export default {
       name: 'slug',
       type: 'slug',
       options: {
-        source: 'Name',
+        source: 'name',
         maxLength: 200, // will be ignored if slugify is set
         slugify: (input) =>
           input.toLowerCase().replace(/\s+/g, '-').slice(0, 200),
